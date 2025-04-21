@@ -1,16 +1,23 @@
-include: base.yml
-
-shield:
-  name: Sofle Dongle
-  description: |
-    A wireless split keyboard dongle for Sofle keyboard.
-    This is the central part that connects to the computer via USB
-    and communicates with the left and right halves via Bluetooth.
-  url: https://github.com/ledat2412/sofle_dongle_zmk
-  features:
-    - split
-    - ble
-    - usb
+identifier: sofle_dongle
+name: Sofle Dongle
+type: shield
+description: Sofle Dongle for split keyboard
+url: https://github.com/sofle_dongle_zmk
+status: experimental
+architectures:
+  - arm
+features:
+  - usb
+  - bluetooth
+  - split
+  - display
+  - battery
+includes:
+  - zmk/split
+  - zmk/display
+  - zmk/battery
+  - zmk/ble
+  - zmk/usb
   matrix:
     cols: 12
     rows: 5
