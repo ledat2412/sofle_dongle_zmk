@@ -3,7 +3,16 @@ if SHIELD_SOFLE_DONGLE
 config ZMK_KEYBOARD_NAME
     default "Sofle Dongle"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
+config ZMK_SPLIT
+    bool
+    default y
+
+config ZMK_SPLIT_BLE
+    bool
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    bool
     default y
 
 endif 

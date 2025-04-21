@@ -1,11 +1,30 @@
-identifier: sofle_left
-name: Sofle Left
-type: shield
-url: https://github.com/yourusername/sofle_dongle_zmk
-requires:
-  - nice_nano_v2
-  - zmk
-  - zmk-split
-  - zmk-battery
-  - zmk-usb
-  - zmk-ble 
+include: base.yml
+
+shield:
+  name: Sofle Left
+  description: |
+    Left half of the Sofle split keyboard.
+    This is the peripheral part that connects to
+    the central dongle via Bluetooth.
+  url: https://github.com/ledat2412/sofle_dongle_zmk
+  features:
+    - split
+    - ble
+    - usb
+  matrix:
+    cols: 6
+    rows: 5
+  gpio:
+    rows:
+      - pin: P0.22
+      - pin: P0.24
+      - pin: P0.19
+      - pin: P0.20
+      - pin: P0.15
+    cols:
+      - pin: P0.2
+      - pin: P0.29
+      - pin: P0.31
+      - pin: P0.30
+      - pin: P0.28
+      - pin: P0.3 

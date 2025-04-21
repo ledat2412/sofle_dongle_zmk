@@ -3,7 +3,16 @@ if SHIELD_SOFLE_RIGHT
 config ZMK_KEYBOARD_NAME
     default "Sofle Right"
 
+config ZMK_SPLIT
+    bool
+    default y
+
+config ZMK_SPLIT_BLE
+    bool
+    default y
+
 config ZMK_SPLIT_BLE_ROLE_PERIPHERAL
+    bool
     default y
 
 endif 

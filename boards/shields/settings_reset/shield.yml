@@ -1,0 +1,11 @@
+include: base.yml
+
+shield:
+  name: Settings Reset
+  description: |
+    A simple shield to reset keyboard settings.
+    This shield has no keys and is used to reset
+    the keyboard to factory settings.
+  url: https://github.com/ledat2412/sofle_dongle_zmk
+  features:
+    - usb 
