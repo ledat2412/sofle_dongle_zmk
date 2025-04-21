@@ -19,3 +19,7 @@ include:
     shield: sofle_right
   - board: nice_nano_v2
     shield: settings_reset
+  - board: nice_nano_v2
+    shield: sofle_dongle
+    keymap: sofle_dongle
+    conf: sofle_dongle.conf
