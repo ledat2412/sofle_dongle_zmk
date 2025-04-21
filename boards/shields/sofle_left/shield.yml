@@ -1,0 +1,11 @@
+identifier: sofle_left
+name: Sofle Left
+type: shield
+url: https://github.com/yourusername/sofle_dongle_zmk
+requires:
+  - nice_nano_v2
+  - zmk
+  - zmk-split
+  - zmk-battery
+  - zmk-usb
+  - zmk-ble 

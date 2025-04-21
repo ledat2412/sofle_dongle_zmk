@@ -1,0 +1,9 @@
+if SHIELD_SOFLE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Sofle Right"
+
+config ZMK_SPLIT_BLE_ROLE_PERIPHERAL
+    default y
+
+endif 
